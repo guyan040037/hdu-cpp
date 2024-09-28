@@ -8,22 +8,22 @@ int main() {
     int guess;
     int attempts = 0;
 
-    std::cout << "ÎÒÏëÁËÒ»¸ö 1 µ½ 10 Ö®¼äµÄÊı×Ö£¬Çë²ÂÒ»²Â£º" << std::endl;
+    std::cout << "æˆ‘æƒ³äº†ä¸€ä¸ª 1 åˆ° 10 ä¹‹é—´çš„æ•°å­—ï¼Œè¯·çŒœä¸€çŒœï¼š" << std::endl;
 
     do {
-        std::cout << "ÄãµÄ²Â²â£º";
+        std::cout << "ä½ çš„çŒœæµ‹ï¼š";
         std::cin >> guess;
         attempts++;
 
         if (guess < targetNumber) {
-            std::cout << "²ÂĞ¡ÁË£¬ÇëÔÙÊÔÒ»´Î¡£" << std::endl;
+            std::cout << "çŒœå°äº†ï¼Œè¯·å†è¯•ä¸€æ¬¡ã€‚" << std::endl;
         }
         else if (guess > targetNumber) {
-            std::cout << "²Â´óÁË£¬ÇëÔÙÊÔÒ»´Î¡£" << std::endl;
+            std::cout << "çŒœå¤§äº†ï¼Œè¯·å†è¯•ä¸€æ¬¡ã€‚" << std::endl;
         }
     } while (guess != targetNumber);
 
-    std::cout << "¹§Ï²Äã£¬²Â¶ÔÁË£¡Äã×Ü¹²²ÂÁË " << attempts << " ´Î¡£" << std::endl;
+    std::cout << "æ­å–œä½ ï¼ŒçŒœå¯¹äº†ï¼ä½ æ€»å…±çŒœäº† " << attempts << " æ¬¡ã€‚" << std::endl;
 
     return 0;
 }
